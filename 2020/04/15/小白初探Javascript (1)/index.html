@@ -79,14 +79,14 @@
 
 
 
-<meta name="description" content="Javascript 学习体会①初遇JavascriptJavascript是一种互联网流行的脚本语言。Javascript定义了HTML和用户间的交互范式。 ②初印象：JS种种区别于HTML,CSS的特点查找和改变内容 1234567function myFunction()&amp;#123;x&#x3D;document.getElementById(&quot;demo&quot;);  &#x2F;&#x2F; 找到元素x.innerHTML&#x3D;">
+<meta name="description" content="①初遇JavascriptJavascript是一种互联网流行的脚本语言。Javascript定义了HTML和用户间的交互范式。 ②初印象：JS种种区别于HTML,CSS的特点通过操作 HTML 元素，查找和改变内容 1234567891011121314&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;body&gt;&lt;h1&gt;我的第一个 Web 页面&lt;&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小白初探Javascript(1)">
 <meta property="og:url" content="http://noobjoshualiu.github.io/2020/04/15/%E5%B0%8F%E7%99%BD%E5%88%9D%E6%8E%A2Javascript%20(1)/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Javascript 学习体会①初遇JavascriptJavascript是一种互联网流行的脚本语言。Javascript定义了HTML和用户间的交互范式。 ②初印象：JS种种区别于HTML,CSS的特点查找和改变内容 1234567function myFunction()&amp;#123;x&#x3D;document.getElementById(&quot;demo&quot;);  &#x2F;&#x2F; 找到元素x.innerHTML&#x3D;">
+<meta property="og:description" content="①初遇JavascriptJavascript是一种互联网流行的脚本语言。Javascript定义了HTML和用户间的交互范式。 ②初印象：JS种种区别于HTML,CSS的特点通过操作 HTML 元素，查找和改变内容 1234567891011121314&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;body&gt;&lt;h1&gt;我的第一个 Web 页面&lt;&#x2F;">
 <meta property="article:published_time" content="2020-04-15T03:58:14.000Z">
-<meta property="article:modified_time" content="2020-04-15T04:01:20.747Z">
+<meta property="article:modified_time" content="2020-04-15T05:58:06.028Z">
 <meta property="article:author" content="Joshua Liu">
 <meta property="article:tag" content="Javascript">
 <meta name="twitter:card" content="summary">
@@ -352,9 +352,9 @@
       
 
       
-        <h2 id="Javascript-学习体会"><a href="#Javascript-学习体会" class="headerlink" title="Javascript 学习体会"></a>Javascript 学习体会</h2><h4 id="①初遇Javascript"><a href="#①初遇Javascript" class="headerlink" title="①初遇Javascript"></a>①初遇Javascript</h4><p>Javascript是一种互联网流行的脚本语言。<br>Javascript定义了HTML和用户间的交互范式。</p>
-<h4 id="②初印象：JS种种区别于HTML-CSS的特点"><a href="#②初印象：JS种种区别于HTML-CSS的特点" class="headerlink" title="②初印象：JS种种区别于HTML,CSS的特点"></a>②初印象：JS种种区别于HTML,CSS的特点</h4><p><strong>查找和改变内容</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">x=<span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>);  <span class="comment">// 找到元素</span></span><br><span class="line">x.innerHTML=<span class="string">"Hello JavaScript!"</span>;    <span class="comment">// 改变内容</span></span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;button type="button" onclick="myFunction()"&gt;点击这里&lt;/</span>button&gt;</span><br></pre></td></tr></table></figure>
+        <h4 id="①初遇Javascript"><a href="#①初遇Javascript" class="headerlink" title="①初遇Javascript"></a>①初遇Javascript</h4><p>Javascript是一种互联网流行的脚本语言。<br>Javascript定义了HTML和用户间的交互范式。</p>
+<h4 id="②初印象：JS种种区别于HTML-CSS的特点"><a href="#②初印象：JS种种区别于HTML-CSS的特点" class="headerlink" title="②初印象：JS种种区别于HTML,CSS的特点"></a>②初印象：JS种种区别于HTML,CSS的特点</h4><p><strong>通过操作 HTML 元素，查找和改变内容</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;我的第一个 Web 页面&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;p id="demo"&gt;我的第一个段落&lt;/</span>p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = <span class="string">"段落已修改。"</span>;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br><span class="line">&lt;<span class="regexp">/html&gt;</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>注：省略了代码上面的p标签部分。</p>
@@ -528,7 +528,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Javascript-学习体会"><span class="nav-number">1.</span> <span class="nav-text">Javascript 学习体会</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#①初遇Javascript"><span class="nav-number">1.0.1.</span> <span class="nav-text">①初遇Javascript</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#②初印象：JS种种区别于HTML-CSS的特点"><span class="nav-number">1.0.2.</span> <span class="nav-text">②初印象：JS种种区别于HTML,CSS的特点</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#①初遇Javascript"><span class="nav-number">1.</span> <span class="nav-text">①初遇Javascript</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#②初印象：JS种种区别于HTML-CSS的特点"><span class="nav-number">2.</span> <span class="nav-text">②初印象：JS种种区别于HTML,CSS的特点</span></a></li></ol></div>
             
 
           </div>
